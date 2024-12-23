@@ -1,0 +1,56 @@
+{
+  "name": "env-checker",
+  "displayName": "Env Checker",
+  "description": "A VSCode extension to check missing and extra environment variables in env.development files.",
+  "version": "0.3.0",
+  "publisher": "Santago",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexohotnikov/envs-checker-vscode"
+  },
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onSave"
+    ],
+  "main": "./out/extension.js",
+  "icon": "images/icon.png", 
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.checkEnvFiles",
+        "title": "[Check-Env]: Check env.development files"
+      }
+    ],
+    "languages": [
+      {
+        "id": "plaintext",
+        "extensions": [
+          ".env.development",
+          ".env.development.example"
+        ]
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^20.4.2",
+    "@types/vscode": "^1.80.0",
+    "eslint": "^8.0.0",
+    "typescript": "^5.0.0",
+    "vscode-test": "^1.6.1"
+  }
+}
