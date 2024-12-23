@@ -1,9 +1,16 @@
-# Change Log
+# Changelog
 
-All notable changes to the "envs-tester" extension will be documented in this file.
+Все заметные изменения в этом проекте будут задокументированы в этом файле.
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+Форматирование этого файла основано на [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), и этот проект придерживается [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [0.2.0] - 2024-12-23
+### Добавлено
+- Реализована функция быстрого исправления (Quick Fix) для автоматического добавления недостающих переменных и удаления лишних.
+- Автоматическая проверка переменных при открытии файла `.env.development`.
 
-- Initial release
+## [0.1.0] - 2024-12-22
+### Добавлено
+- Базовая функциональность для проверки недостающих и лишних переменных в файлах `.env.development` по сравнению с `.env.development.example`.
+- Подсветка ошибок для недостающих и лишних переменных.
+- Автоматическая проверка при сохранении файла `.env.development`.
