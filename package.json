@@ -2,7 +2,7 @@
   "name": "env-checker",
   "displayName": "Env Checker",
   "description": "A VSCode extension to check missing and extra environment variables in env.development files.",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "publisher": "Santago",
   "repository": {
     "type": "git",
